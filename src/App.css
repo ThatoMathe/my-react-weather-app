@@ -1,38 +1,51 @@
+:root {
+  --main-color: #878787;
+}
+
 .App {
+  font-family: arial, sans-serif;
+  color: var(--main-color);
+}
+
+.App .container {
+  border: 1px solid var(--main-color);
+  border-radius: 4px;
+  margin: 20px auto;
+  max-width: 550px;
+  padding: 20px 20px 0px 20px;
+}
+.App h1 {
+  font-size: 24px;
+  font-weight: 100;
+  margin: 20px 0 5px 0;
+  line-height: 29px;
+}
+
+.App ul {
+  list-style: none;
+  padding: 0;
+}
+
+.App footer {
   text-align: center;
+  font-size: small;
+  position: relative;
+  top: -10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .temperature {
+  font-weight: 400;
+  font-size: 48px;
+  color: black;
+}
+.App .celsius-temp {
+  color: black;
+  position: relative;
+  top: -24px;
+  left: -4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App img {
+  position: relative;
+  top: -10px;
 }
